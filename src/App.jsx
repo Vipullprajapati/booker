@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./index.css";
 import Form from "./Form";
 
 function App() {
@@ -50,8 +51,11 @@ function App() {
 
   return (
     <>
+      {/* heading  */}
       <header>
-        <h1>Booker</h1>
+      <div className="booker-container">
+        <h1 className="text-3xl font-bold text-center display-flex justify-center">Booker</h1>
+        </div>
       </header>
 
       <Form onSubmit={addBook} onSort={handleSort} />
@@ -61,9 +65,9 @@ function App() {
           <h3>{book.text}</h3>
           <p>{book.likes}</p>
 
-          <div style={{ display: "flex", gap: "5px" }}>
-            <button onClick={() => likeBook(book.id)}>Like</button>
-            <button onClick={() => dislikeBook(book.id)}>Dislike</button>
+          <div className="button-container" style={{ display: "flex", gap: "5px" }}>
+            <button onClick={() => likeBook(book.id)}>👍</button>
+            <button onClick={() => dislikeBook(book.id)}>👎</button>
             <button onClick={() => deleteBook(book.id)}>Delete</button>
           </div>
         </pre>
