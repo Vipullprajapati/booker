@@ -52,9 +52,9 @@ function App() {
   return (
     <>
       {/* heading  */}
-      <header>
+      <header className="bg">
       <div className="booker-container">
-        <h1 className="text-3xl font-bold text-center display-flex justify-center">Booker</h1>
+        <h1 className="text-5xl font-bold text-center display-flex justify-center">Booker</h1>
         </div>
       </header>
 

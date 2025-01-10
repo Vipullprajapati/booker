@@ -55,3 +55,18 @@
     justify-content: center;
     gap: 10px;
   }
+
+  .bg {
+   background-image: url("public/background.jpg");
+   background-size: cover;
+   background-position: center;
+   height: 100vh;
+  }
+
+  .booker-container h1 {
+    color: white;
+    font-size: 143px;
+    margin-bottom: 50px;
+    margin-bottom: 604px;
+    font-family: serif;
+}
