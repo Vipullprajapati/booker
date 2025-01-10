@@ -14,27 +14,27 @@ function Form({ onSubmit, onSort }) {
 
   return (
     <form onSubmit={handleSubmit}>
-      <fieldset>
+      <fieldset className="border ">
         <legend>Add a book</legend>
         <div className="input-container">
-        <input
-          type="text"
-          name="book"
-          placeholder="Add a book"
-          autoComplete="off"
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-        />
+          <input
+            type="text"
+            name="book"
+            placeholder="Add a book"
+            autoComplete="off"
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+          />
         </div>
         <div className="button-container">
-        <div className="Sort-task">
-        <button type="button" onClick={onSort}>
-          Sort
-        </button>
-        </div>
-        <div className="add-book">
-        <button type="submit">Add book</button>
-        </div>
+          <div className="Sort-task">
+            <button type="button" onClick={onSort}>
+              Sort
+            </button>
+          </div>
+          <div className="add-book">
+            <button type="submit">Add book</button>
+          </div>
         </div>
       </fieldset>
     </form>

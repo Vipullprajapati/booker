@@ -53,19 +53,26 @@ function App() {
     <>
       {/* heading  */}
       <header className="bg">
-      <div className="booker-container">
-        <h1 className="text-5xl font-bold text-center display-flex justify-center">Booker</h1>
+        <div className="booker-container">
+          <h1 className="text-5xl font-bold text-center display-flex justify-center">
+            Booker
+          </h1>
         </div>
       </header>
 
       <Form onSubmit={addBook} onSort={handleSort} />
 
       {books.map((book) => (
-        <pre key={book.id}>
+        <pre className="render-book" key={book.id}>
           <h3>{book.text}</h3>
           <p>{book.likes}</p>
 
-          <div className="button-container" style={{ display: "flex", gap: "5px" }}>
+          {/* buttons */}
+
+          <div
+            className="button-container"
+            style={{ display: "flex", gap: "5px" }}
+          >
             <button onClick={() => likeBook(book.id)}>👍</button>
             <button onClick={() => dislikeBook(book.id)}>👎</button>
             <button onClick={() => deleteBook(book.id)}>Delete</button>

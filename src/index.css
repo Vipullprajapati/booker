@@ -1,3 +1,8 @@
+body {
+  background-color:rgba(14, 255, 14, 0.21);
+  
+}
+
 .booker-container {
     display: flex;
     flex-direction: column;
@@ -69,4 +74,20 @@
     margin-bottom: 50px;
     margin-bottom: 604px;
     font-family: serif;
+}
+
+.render-book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #292727;
+  border-radius: 10px;
+}
+
+.border {
+  border: 1px solid #292727;
+  border-radius: 10px;
 }
